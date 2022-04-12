@@ -1,0 +1,75 @@
+@import '@style/common.less';
+
+.menu {
+    background: @secondColor  !important;
+
+    :global {
+        .ant-menu-submenu-arrow {
+            color: @fontColor  !important;
+        }
+
+        .anticon {
+            color: @fontColor;
+        }
+
+        .ant-layout-sider-trigger {
+            background: initial !important;
+        }
+
+        .ant-menu {
+            background: initial !important;
+            color: @fontColor  !important;
+        }
+
+        .ant-menu-sub.ant-menu-inline {
+            background: initial !important;
+        }
+
+        .ant-space-item {
+            color: @fontColor;
+        }
+
+        .ant-menu-item a {
+            color: @fontColor;
+        }
+
+        .ant-menu-item a:hover {
+            color: @firstColor;
+        }
+
+        .ant-menu-light .ant-menu-submenu-title:hover {
+            color: @firstColor;
+        }
+
+        .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+            background: @firstColor;
+        }
+
+        .ant-menu-item-selected a:hover {
+            color: @fontColor;
+        }
+
+        .ant-menu-inline,
+        .ant-menu-vertical,
+        .ant-menu-vertical-left {
+            border-right: 1px solid @secondColor;
+        }
+
+        .ant-menu-item:active,
+        .ant-menu-submenu-title:active {
+            background: none;
+        }
+
+        .ant-menu-item a:active {
+            background: none;
+        }
+
+        .ant-menu-submenu-selected {
+            color: @firstColor;
+        }
+
+        .ant-menu-inline .ant-menu-item {
+            margin: 0;
+        }
+    }
+}
